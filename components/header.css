@@ -3,7 +3,8 @@
   top: 0;
   text-align: center;
   width: 100%;
-  background-color: aqua;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   line-height: var(--header-line-height);
   z-index: 1;
 }
