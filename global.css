@@ -1,0 +1,21 @@
+:root {
+  --secondary-color: rgb(35, 35, 35);
+  --primary-color: rgb(177, 218, 216);
+  --title-font-size: 2.5em;
+  --card-font-size: 1em;
+  --nav-font-size: 1em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+html {
+  background-color: var(--primary-color) !important;
+}
+h1 {
+  font-size: var(--title-font-size) !important;
+}
+p {
+  font-size: var(--card-font-size) !important ;
+}
+
+nav {
+  font-size: var(--nav-font-size) !important;
+}
