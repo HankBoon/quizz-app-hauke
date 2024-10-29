@@ -1,0 +1,14 @@
+.footer {
+  /* position: fixed; */
+  text-align: center;
+  width: 100%;
+  background-color: aqua;
+  padding: 1.5em;
+  position: fixed;
+  bottom: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
