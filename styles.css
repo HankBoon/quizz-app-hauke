@@ -11,3 +11,13 @@
   padding: 0;
   margin: 0;
 }
+
+:root {
+  --gap: 20px;
+  --header-line-height: 4em;
+  --main-margin-top: calc(var(--header-line-height) + var(--gap));
+}
+
+.main-section {
+  margin-top: var(--main-margin-top);
+}

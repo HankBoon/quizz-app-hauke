@@ -1,8 +1,9 @@
 .header {
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   text-align: center;
   width: 100%;
   background-color: aqua;
-  padding: 1.5em;
+  line-height: var(--header-line-height);
+  z-index: 1;
 }
