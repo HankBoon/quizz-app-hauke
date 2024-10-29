@@ -1,0 +1,33 @@
+.card-section {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 1em;
+  align-items: center;
+  gap: 1em;
+}
+.quiz-card {
+  border: 2px solid black;
+  padding: 1em;
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+}
+.quiz-card--button {
+  margin-top: 1em;
+}
+.question {
+  /* display: none */
+}
+.answer {
+}
+.quiz-card--bookmark {
+  /* width: 20px;
+  height: 20px; */
+  background-image: (".\images\bookmark_111017.png");
+  background-size: ;
+}
+a {
+  align-self: flex-end;
+  /* position: sticky; */
+  /* top: 100px; */
+}
