@@ -1,5 +1,6 @@
 .header {
-  position: fixed;
+  /* position: fixed; */
+  top: 0;
   text-align: center;
   width: 100%;
   background-color: aqua;
