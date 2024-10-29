@@ -2,12 +2,30 @@
   text-align: center;
   width: 100%;
   background-color: aqua;
-  padding: 1.5em;
   position: fixed;
   bottom: 0;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around;*/
+}
+
+.navbar a {
+  flex: 1;
+  padding: 1em 0;
+  background-color: aqua;
+}
+
+.navbar-home {
+  position: relative;
+  bottom: 20px;
+}
+
+.navbar-bookmark {
+  position: relative;
+  bottom: 25px;
+}
+
+.navbar-home:target {
 }
