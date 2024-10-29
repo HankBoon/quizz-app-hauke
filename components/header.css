@@ -5,4 +5,5 @@
   width: 100%;
   background-color: aqua;
   line-height: var(--header-line-height);
+  z-index: 1;
 }
