@@ -11,23 +11,18 @@
   display: flex;
   flex-flow: column wrap;
   position: relative;
+  width: 60%;
 }
 .quiz-card--button {
   margin-top: 1em;
 }
-.question {
-  /* display: none */
-}
-.answer {
-}
 .quiz-card--bookmark {
-  /* width: 20px;
-  height: 20px; */
-  background-image: (".\images\bookmark_111017.png");
-  background-size: ;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -15px;
+  right: 15px;
 }
 a {
   align-self: flex-end;
-  /* position: sticky; */
-  /* top: 100px; */
 }
