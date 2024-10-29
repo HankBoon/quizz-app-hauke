@@ -1,28 +1,40 @@
 .card-section {
   display: flex;
   flex-flow: column wrap;
-  margin: 1em;
   align-items: center;
   gap: 1em;
 }
 .quiz-card {
   border: 2px solid black;
-  padding: 1em;
   display: flex;
   flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
   position: relative;
-  width: 60%;
+  width: 90%;
+  height: 200px;
 }
-.quiz-card--button {
-  margin-top: 1em;
-}
+
 .quiz-card--bookmark {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: -15px;
   right: 15px;
 }
-a {
+.quiz-card a {
   align-self: flex-end;
+}
+
+.quiz-card--tags {
+  display: flex;
+  align-self: flex-start;
+  gap: 5px;
+  padding-left: 10px;
+}
+
+.quiz-card--tags p {
+  border: solid 2px;
+  border-radius: 5px;
+  padding: 2px;
 }
