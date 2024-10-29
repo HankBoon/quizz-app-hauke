@@ -9,6 +9,7 @@
 .navbar {
   display: flex;
   /* justify-content: space-around;*/
+  font-size: var(--nav-font-size);
 }
 
 .navbar a {

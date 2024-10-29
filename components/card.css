@@ -38,3 +38,8 @@
   border-radius: 5px;
   padding: 2px;
 }
+
+.question,
+.answer {
+  font-size: var(--card-font-size);
+}

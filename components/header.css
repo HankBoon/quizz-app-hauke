@@ -7,4 +7,6 @@
   color: var(--primary-color);
   line-height: var(--header-line-height);
   z-index: 1;
+  font-size: var(--title-font-size);
+  padding: var(--header-padding);
 }
