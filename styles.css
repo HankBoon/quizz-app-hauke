@@ -14,11 +14,8 @@
 
 :root {
   --gap: 20px;
-  /* --header-padding: 1em; */
-  /* --header-line-height: calc(var(--title-font-size) + var(--header-padding) ); */
-  --header-line-height: 4em;
+  --header-line-height: calc(var(--title-font-size) * 3);
   --main-margin-top: calc(var(--header-line-height) + var(--gap));
-  /* --main-margin-top: calc(2*var(--header-padding) + var(--title-font-size) + var(--gap)); */
 }
 
 .main-section {

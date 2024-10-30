@@ -1,7 +1,8 @@
 :root {
   --secondary-color: rgb(35, 35, 35);
   --primary-color: rgb(177, 218, 216);
-  --title-font-size: 1em;
+  --title-font-size: 1.5rem;
+  /*changed from em to rem to allow for calculation of main top margin*/
   --card-font-size: 1em;
   --nav-font-size: 1em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
