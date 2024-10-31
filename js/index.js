@@ -13,13 +13,6 @@ console.log(homeHighlight);
 console.log(bookmarkHighlight);
 console.log(profileHighlight);
 
-/* //Highlight Home Button
-homeHighlight.addEventListener("click", () => {
-  homeHighlight.classList.add("navbar-highlight");
-  bookmarkHighlight.classList.remove("navbar-highlight");
-  profileHighlight.classList.remove("navbar-highlight");
-}); */
-
 const navLinks = [homeHighlight, bookmarkHighlight, profileHighlight];
 
 navLinks.forEach((link) => {
