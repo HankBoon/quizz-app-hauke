@@ -11,23 +11,49 @@
       <h1>Quiz-App</h1>
     </header>
     <main class="main-section">
-      <section class="card-section">
-        <h2 class="card-section--header">Your bookmarks</h2>
-        <article class="quiz-card --first-card">
-          <a href="#"
-            ><img
-              class="quiz-card--bookmark"
+      <section class="profile-section">
+        <h2 class="profile-section--header">Your profile</h2>
+        <section class="profile-section--card">
+          <img
+            class="profile-section--card--image"
+            src="./images/premium_photo-1671656349322-41de944d259b.avif"
+            alt="A picture of yourself"
+          />
+          <h3 class="profile-section--card--name">Dude XYZ</h3>
+          <h4 class="profile-section--card--about-me">About me</h4>
+          <article class="profile-section--card--about-me">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </article>
+          <div class="profile-section--card--bookmark-counter">
+            <img
               src="./images/bookmark_checked.png"
-              alt="bookmark icon"
-          /></a>
-          <p class="question --first-question">What does CSS stand for?</p>
-          <p class="answer --first-answer" hidden>Cascading Style Sheets</p>
-          <button class="quiz-card--button">Flip</button>
-          <div class="quiz-card--tags">
-            <p>#CSS</p>
-            <p>#Coding</p>
+              class="profile-section--card--bookMark-image"
+              alt=""
+            />
+            <p>10</p>
           </div>
-        </article>
+        </section>
+        <hr class="profile-section--divider" />
+        <h2>Settings</h2>
+        <section class="setting-section">
+          <label for="setting-section--switch--checkbox"
+            ><h4>Dark Mode</h4></label
+          >
+          <label class="setting-section--switch">
+            <input
+              id="setting-section--switch--checkbox"
+              class="setting-section--switch--checkbox"
+              type="checkbox"
+            />
+            <span class="setting-section--switch--slider round"></span>
+          </label>
+        </section>
       </section>
     </main>
     <footer class="footer">
