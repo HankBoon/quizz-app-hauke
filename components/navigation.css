@@ -18,7 +18,13 @@
   background-color: var(--secondary-color);
 }
 
-.navbar-home {
+.navbar-highlight {
+  position: relative;
+  bottom: 25px;
+  transition: all 0.3s ease;
+}
+
+/* .navbar-home {
   position: relative;
   bottom: 20px;
 }
@@ -26,7 +32,8 @@
 .navbar-bookmark {
   position: relative;
   bottom: 25px;
-}
+} */
 
-.navbar-home:target {
+/* .navbar-home:target {
 }
+ */
