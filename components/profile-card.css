@@ -1,0 +1,46 @@
+.profile-section {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1em;
+}
+.profile-section--card {
+  border: 2px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  width: 90%;
+  gap: 1em;
+
+  justify-content: flex-end;
+  padding: 1em;
+}
+.profile-section--card--image {
+  flex: 1 30%;
+  max-width: 40%;
+}
+.profile-section--card--name {
+  flex: 2 50%;
+
+  padding-top: 1em;
+  /* border: 1px solid black; */
+}
+.profile-section--card--about-me {
+  flex: 1 100%;
+  text-align: left;
+}
+
+.profile-section--card--bookmark-counter {
+  /* max-width: 50%; */
+  display: flex;
+  /* justify-content: flex-end; */
+  flex-direction: row;
+  align-items: center;
+  align-self: flex-end;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 0.5em;
+}
+.profile-section--card--bookmark-counter img {
+  height: 1.5em;
+}
