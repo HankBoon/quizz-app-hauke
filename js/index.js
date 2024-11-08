@@ -3,7 +3,7 @@ console.log(bookmarkImg);
 
 bookmarkImg.addEventListener("click", () => {
   // First approach:
-  //   bookmarkImg.src === "./images/bookmark-plus.svg"
+  //   bookmarkImg.src === bookmarkImg.src.endsWith("./images/bookmark-plus.svg")
   //     ? "./images/star.svg"
   //     : "./images/bookmark-plus.svg";
 
@@ -15,10 +15,6 @@ bookmarkImg.addEventListener("click", () => {
   //   }
 
   // Third approach:
-  //     bookmarkImg.classList.toggle("active");
-  //   bookmarkImg.classList.toggle("inactive");
-
-  //   Fourth approach:
   bookmarkImg.classList.toggle("inactive");
   bookmarkImg.classList.toggle("active");
 });
