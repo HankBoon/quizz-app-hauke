@@ -52,9 +52,14 @@
   padding: 2px;
 }
 
-.question,
-.answer {
+.question-answer {
   font-size: var(--card-font-size);
+  opacity: 1;
+}
+
+.question-answer.fade {
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .quiz-card--button {

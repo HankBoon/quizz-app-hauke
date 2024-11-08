@@ -1,6 +1,8 @@
 const bookmarkImg = document.querySelector(`[data-js="quiz-card--bookmark"]`);
 const answerButton = document.querySelector(`[data-js="quiz-card--button"]`);
-const answer = document.querySelector(`[data-js="quiz-card--answer"]`);
+const answerQuestionField = document.querySelector(
+  `[data-js="quiz-card--question-answer"]`
+);
 
 bookmarkImg.addEventListener("click", () => {
   // First approach:
@@ -21,9 +23,16 @@ bookmarkImg.addEventListener("click", () => {
 });
 
 answerButton.addEventListener("click", () => {
-  // First approach:
-  answer.toggleAttribute("hidden");
   answerButton.textContent === "Show answer"
     ? (answerButton.textContent = "Hide answer")
     : (answerButton.textContent = "Show answer");
+
+  // First approach:
+  //   answer.toggleAttribute("hidden");
+  const question = "What does CSS stand for?";
+  const answer = "Cascading Style Sheets";
+
+  answerQuestionField.textContent === question
+    ? (answerQuestionField.textContent = answer)
+    : (answerQuestionField.textContent = question);
 });
