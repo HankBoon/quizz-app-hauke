@@ -21,7 +21,20 @@
   position: absolute;
   top: -15px;
   right: 15px;
+  background-color: var(--primary-color);
+  border: 1px solid black;
 }
+
+.quiz-card--bookmark.inactive {
+  /* background-image: url("./images/bookmark-plus.svg"); */
+  background-color: var(--primary-color);
+}
+
+.quiz-card--bookmark.active {
+  /* background-image: url("./images/star.svg"); */
+  background-color: red;
+}
+
 .quiz-card a {
   align-self: flex-end;
 }
@@ -39,7 +52,20 @@
   padding: 2px;
 }
 
-.question,
-.answer {
+.question-answer {
   font-size: var(--card-font-size);
+  opacity: 1;
+}
+
+.question-answer.fade {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.quiz-card--button {
+  padding: 0.5em;
+  background-color: var(--secondary-color);
+  border: none;
+  color: var(--primary-color);
+  border-radius: 5px;
 }
