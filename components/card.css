@@ -59,4 +59,8 @@
 
 .quiz-card--button {
   padding: 0.5em;
+  background-color: var(--secondary-color);
+  border: none;
+  color: var(--primary-color);
+  border-radius: 5px;
 }
