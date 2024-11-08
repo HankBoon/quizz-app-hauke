@@ -22,7 +22,19 @@
   top: -15px;
   right: 15px;
   background-color: var(--primary-color);
+  border: 1px solid black;
 }
+
+.quiz-card--bookmark.inactive {
+  /* background-image: url("./images/bookmark-plus.svg"); */
+  background-color: var(--primary-color);
+}
+
+.quiz-card--bookmark.active {
+  /* background-image: url("./images/star.svg"); */
+  background-color: red;
+}
+
 .quiz-card a {
   align-self: flex-end;
 }
