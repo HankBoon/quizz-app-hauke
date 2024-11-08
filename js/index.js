@@ -10,6 +10,7 @@ bookmarkImg.addEventListener("click", () => {
     ? "./images/star.svg"
     : "./images/bookmark-plus.svg";
   console.log(bookmarkImg.src);
+
   // Second approach:
   //   if (bookmarkImg.src.endsWith("/images/bookmark-plus.svg")) {
   //     bookmarkImg.src = "./images/star.svg";
@@ -29,7 +30,7 @@ answerButton.addEventListener("click", () => {
 
   // First approach:
   //   answer.toggleAttribute("hidden");
-  const question = "What does CSS stand for?".trim();
+  const question = "What does CSS stand for?";
   const answer = "Cascading Style Sheets";
 
   answerQuestionField.textContent === question
