@@ -56,3 +56,7 @@
 .answer {
   font-size: var(--card-font-size);
 }
+
+.quiz-card--button {
+  padding: 0.5em;
+}
