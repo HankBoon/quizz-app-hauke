@@ -4,6 +4,7 @@
 @import "./components/navigation.css";
 @import "./components/button.css";
 @import "./components/profile-card.css";
+@import "./components/toggle-button.css";
 
 *,
 *::before,
