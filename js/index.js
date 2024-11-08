@@ -6,24 +6,25 @@ const answerQuestionField = document.querySelector(
 
 bookmarkImg.addEventListener("click", () => {
   // First approach:
-  //   bookmarkImg.src === bookmarkImg.src.endsWith("./images/bookmark-plus.svg")
-  //     ? "./images/star.svg"
-  //     : "./images/bookmark-plus.svg";
+  bookmarkImg.src = bookmarkImg.src.endsWith("/images/bookmark-plus.svg")
+    ? "./images/star.svg"
+    : "./images/bookmark-plus.svg";
+  console.log(bookmarkImg.src);
 
   // Second approach:
-  //   if (bookmarkImg.src === "./images/bookmark-plus.svg") {
+  //   if (bookmarkImg.src.endsWith("/images/bookmark-plus.svg")) {
   //     bookmarkImg.src = "./images/star.svg";
   //   } else {
   //     bookmarkImg.src = "./images/bookmark-plus.svg";
   //   }
 
   // Third approach:
-  bookmarkImg.classList.toggle("inactive");
-  bookmarkImg.classList.toggle("active");
+  //   bookmarkImg.classList.toggle("inactive");
+  //   bookmarkImg.classList.toggle("active");
 });
 
 answerButton.addEventListener("click", () => {
-  answerButton.textContent === "Show answer"
+  answerButton.textContent.trim() === "Show answer"
     ? (answerButton.textContent = "Hide answer")
     : (answerButton.textContent = "Show answer");
 

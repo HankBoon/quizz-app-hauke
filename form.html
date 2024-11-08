@@ -5,30 +5,41 @@
     <script src="./js/index.js" defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Quiz-app</title>
   </head>
   <body>
-    <header class="header">
-      <h1>Quiz-App</h1>
-    </header>
     <main class="main-section">
-      <section class="card-section">
-        <h2 class="card-section--header">Your bookmarks</h2>
-        <article class="quiz-card --first-card">
-          <a href="#"
-            ><img
-              class="quiz-card--bookmark"
-              src="./images/bookmark_checked.png"
-              alt="bookmark icon"
-          /></a>
-          <p class="question --first-question">What does CSS stand for?</p>
-          <p class="answer --first-answer" hidden>Cascading Style Sheets</p>
-          <button class="quiz-card--button">Flip</button>
-          <div class="quiz-card--tags">
-            <p>#CSS</p>
-            <p>#Coding</p>
-          </div>
-        </article>
+      <section class="form-section">
+        <h2>Add new questions</h2>
+        <form class="form-section--form">
+          <label for="form-section--textarea-question">Your question:</label>
+          <input
+            type="textarea"
+            class="form-section--textarea"
+            id="form-section--textarea-question"
+            name="form-section--textarea-question"
+            required
+          />
+          <label for="form-section--textarea-answer">Your answer:</label>
+          <input
+            type="textarea"
+            class="form-section--textarea"
+            id="form-section--textarea-answer"
+            name="form-section--textarea-answer"
+            required
+          />
+          <label for="form-section--text">Tags:</label>
+          <input
+            type="text"
+            class="form-section--text"
+            id="form-section--text"
+            name="form-section--text"
+            required
+          />
+          <button type="submit" class="form-section--button button">
+            Add new question
+          </button>
+        </form>
       </section>
     </main>
     <footer class="footer">
