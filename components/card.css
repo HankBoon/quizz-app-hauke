@@ -21,6 +21,7 @@
   position: absolute;
   top: -15px;
   right: 15px;
+  background-color: var(--primary-color);
 }
 .quiz-card a {
   align-self: flex-end;
