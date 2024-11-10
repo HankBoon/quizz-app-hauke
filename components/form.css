@@ -14,3 +14,8 @@
   /* justify-content: flex-end; */
   padding: 1em;
 }
+
+.form-section--text-counter {
+  font-size: calc(0.75 * var(--card-font-size));
+  text-align: end;
+}
