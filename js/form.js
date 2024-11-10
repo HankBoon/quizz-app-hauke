@@ -3,9 +3,10 @@ const answerQuestionField = document.querySelector(
 );
 const questionForm = document.querySelector(`[data-js="form-section--form"]`);
 
-questionForm.addEventListener("click", (event) => {
+questionForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
-  console.log("foo");
+  event.target.reset();
+  event.target.elements.question.focus();
 });
