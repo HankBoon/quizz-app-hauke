@@ -28,12 +28,10 @@ answerButton.addEventListener("click", () => {
     ? (answerButton.textContent = "Hide answer")
     : (answerButton.textContent = "Show answer");
 
-  //   // First approach:
-  //   answer.toggleAttribute("hidden");
   const question = "What does CSS stand for?";
   const answer = "Cascading Style Sheets";
 
-  answerQuestionField.textContent === question
+  answerQuestionField.textContent.trim() === question
     ? (answerQuestionField.textContent = answer)
     : (answerQuestionField.textContent = question);
 });

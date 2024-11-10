@@ -44,6 +44,18 @@ questionForm.addEventListener("submit", (event) => {
   button.classList.add("quiz-card--button");
   button.setAttribute("data-js", "quiz-card--button");
   button.textContent = "Show answer";
+  button.addEventListener("click", () => {
+    button.textContent.trim() === "Show answer"
+      ? (button.textContent = "Hide answer")
+      : (button.textContent = "Show answer");
+
+    const question = data.question;
+    const answer = data.answer;
+
+    questionAnswerParagraph.textContent.trim() === question
+      ? (questionAnswerParagraph.textContent = answer)
+      : (questionAnswerParagraph.textContent = question);
+  });
 
   const tagContainer = document.createElement("div");
   formElement.append(tagContainer);
