@@ -49,28 +49,35 @@ questionForm.addEventListener("submit", (event) => {
   singleTag.textContent = data.tag;
 });
 
-// const questionArea = document.querySelector(
-//   `[data-js="form-section--textarea-question"]`
-// );
-// const questionCounter = document.querySelector(
-//   `[data-js="form-section--text-counter-question"]`
-// );
+const questionArea = document.querySelector(
+  `[data-js="form-section--textarea-question"]`
+);
+const questionCounter = document.querySelector(
+  `[data-js="form-section--text-counter-question"]`
+);
+const answerArea = document.querySelector(
+  `[data-js="form-section--textarea-answer"]`
+);
+const answerCounter = document.querySelector(
+  `[data-js="form-section--text-counter-answer"]`
+);
 
-// questionArea.addEventListener("input", () => {
-//   console.log(questionArea.value.length);
-//   questionCounter.textContent = `${
-//     150 - questionArea.value.length
-//   } characters left`;
-// });
+function calculateInput(counter, textarea) {
+  counter.textContent = `${
+    textarea.maxLength - textarea.value.length
+  } characters left`;
+}
 
-// const answerArea = document.querySelector(
-//   `[data-js="form-section--textarea-answer"]`
-// );
-// const answerCounter = document.querySelector(
-//   `[data-js="form-section--text-counter-answer"]`
-// );
+questionArea.addEventListener("input", () => {
+  calculateInput(questionCounter, questionArea);
+});
+
+answerArea.addEventListener("input", () => {
+  calculateInput(answerCounter, answerArea);
+});
+
+// FIRST APPROACH:
 // answerArea.addEventListener("input", () => {
-//   console.log(answerArea.value.length);
 //   answerCounter.textContent = `${
 //     150 - answerArea.value.length
 //   } characters left`;
