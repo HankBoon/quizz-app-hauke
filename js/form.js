@@ -27,6 +27,11 @@ questionForm.addEventListener("submit", (event) => {
   bmarkImg.src = "./images/bookmark-plus.svg";
   bmarkImg.alt = "bookmark icon";
   bmarkImg.setAttribute("data-js", "quiz-card--bookmark");
+  bmarkImg.addEventListener("click", () => {
+    bmarkImg.src = bmarkImg.src.endsWith("/images/bookmark-plus.svg")
+      ? "./images/star.svg"
+      : "./images/bookmark-plus.svg";
+  });
 
   const questionAnswerParagraph = document.createElement("p");
   formElement.append(questionAnswerParagraph);
