@@ -32,7 +32,7 @@
 
 .quiz-card--bookmark.active {
   /* background-image: url("./images/star.svg"); */
-  background-color: red;
+  background-color: var(--primary-color);
 }
 
 .quiz-card a {
