@@ -8,8 +8,10 @@ questionForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
-  //   event.target.reset();
+  event.target.reset();
+
   event.target.elements.question.focus();
+  // event.target.elements.question.setSelectionRange(0, 0);
 
   const formElement = document.createElement("article");
   formSection.append(formElement);
@@ -46,3 +48,30 @@ questionForm.addEventListener("submit", (event) => {
   tagContainer.append(singleTag);
   singleTag.textContent = data.tag;
 });
+
+// const questionArea = document.querySelector(
+//   `[data-js="form-section--textarea-question"]`
+// );
+// const questionCounter = document.querySelector(
+//   `[data-js="form-section--text-counter-question"]`
+// );
+
+// questionArea.addEventListener("input", () => {
+//   console.log(questionArea.value.length);
+//   questionCounter.textContent = `${
+//     150 - questionArea.value.length
+//   } characters left`;
+// });
+
+// const answerArea = document.querySelector(
+//   `[data-js="form-section--textarea-answer"]`
+// );
+// const answerCounter = document.querySelector(
+//   `[data-js="form-section--text-counter-answer"]`
+// );
+// answerArea.addEventListener("input", () => {
+//   console.log(answerArea.value.length);
+//   answerCounter.textContent = `${
+//     150 - answerArea.value.length
+//   } characters left`;
+// });
