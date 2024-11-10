@@ -22,7 +22,6 @@
   top: -15px;
   right: 15px;
   background-color: var(--primary-color);
-  border: 1px solid black;
 }
 
 .quiz-card--bookmark.inactive {

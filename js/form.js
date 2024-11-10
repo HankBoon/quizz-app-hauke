@@ -63,7 +63,7 @@ questionForm.addEventListener("submit", (event) => {
 
   const singleTag = document.createElement("p");
   tagContainer.append(singleTag);
-  singleTag.textContent = data.tag;
+  singleTag.textContent = "#" + data.tag;
 });
 
 const questionArea = document.querySelector(
